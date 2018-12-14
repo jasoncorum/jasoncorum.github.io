@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @import "minima";
@@ -10,7 +9,7 @@
 
 body {
   background-color: #000;
-  background-image: url("assets/images/bkgd_50.png");
+  background-image: url("images/bkgd_50.png");
   background-repeat: repeat;
   color: #ddf7ed;
   margin: 0;
