@@ -1,0 +1,26 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.site-title, .site-title:visited {
+  color: red;
+}
+
+body {
+  background-color: #000;
+  background-image: url("assets/images/bkgd_50.png");
+  background-repeat: repeat;
+  color: #ddf7ed;
+  margin: 0;
+  padding: 0;
+  min-width: 1000px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  -webkit-background-size: 400px 200px;
+  -moz-background-size: 400px 200px;
+  -o-background-size: 400px 200px;
+  background-size: 400px 200px;
+}
