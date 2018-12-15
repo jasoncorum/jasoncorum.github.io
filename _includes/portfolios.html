@@ -1,0 +1,8 @@
+<ul class="row">
+  {% for portfolio in site.portfolios %}
+    <li class="col-md-6">
+      <h3>{{ portfolio.title }}</h3>
+      <img src="{{portfolio.img_src}}" alt="" />
+    </li>
+  {% endfor %}
+</ul>

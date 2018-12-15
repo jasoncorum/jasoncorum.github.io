@@ -24,9 +24,10 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
+sass:
+  sass_dir: css
 
 collections:
   images:
