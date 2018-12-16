@@ -1,8 +1,19 @@
-<ul class="row">
+<div class="row" id="accordion">
   {% for portfolio in site.portfolios %}
-    <li class="col-md-6">
-      <h3>{{ portfolio.title }}</h3>
-      <img src="{{portfolio.img_src}}" alt="" />
-    </li>
+  <div class="card-header col-md-6 col-sm-6" id="heading{{ portfolio.title }}">
+    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ portfolio.title }}" aria-expanded="true" aria-controls="collapse{{ portfolio.title }}">
+        <img src="{{portfolio.img_src}}" alt="{{ portfolio.title }}" />
+        <h2>{{ portfolio.title }}</h2>
+    </button>
+  </div>
   {% endfor %}
-</ul>
+  {% for portfolio in site.portfolios %}
+  <div id="collapse{{ portfolio.title }}" class="collapse col-md-12 col-sm-12" aria-labelledby="heading{{ portfolio.title }}" data-parent="#accordion">
+    <div class="card">
+      <div class="card-body">
+        {{ portfolio.title }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

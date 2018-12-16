@@ -1,7 +1,18 @@
 ---
 ---
 
-.site-title, .site-title:visited {
+.fixed-top {
+    position: fixed;
+    top: 1rem;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none; // Remove the border on images inside links in IE 10-.
 }
 
 .logo {
