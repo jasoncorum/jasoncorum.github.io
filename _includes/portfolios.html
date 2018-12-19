@@ -11,7 +11,11 @@
   <div id="collapse{{ portfolio.title }}" class="collapse col-md-12 col-sm-12" aria-labelledby="heading{{ portfolio.title }}" data-parent="#accordion">
     <div class="card">
       <div class="card-body">
-        {{ portfolio.title }}
+        {% for image in site.images %}
+          {% if image.portfolio == portfolio.title %}
+            <img src="{{image.img_src}}" alt="{{ image.img_alt }}" />
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
