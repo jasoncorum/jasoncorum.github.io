@@ -1,5 +1,8 @@
 ---
 ---
+h1, h2, h3 {
+  color: #fff;
+}
 
 .fixed-top {
     position: fixed;
@@ -7,6 +10,7 @@
     right: 0;
     left: 0;
     z-index: 1030;
+    opacity: 0.75;
 }
 
 img {
@@ -47,4 +51,24 @@ body {
   -moz-background-size: 400px 200px;
   -o-background-size: 400px 200px;
   background-size: 400px 200px;
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(255,255,255,0.2);
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+
+.bg-light-wht {
+  background-color: none;
 }
