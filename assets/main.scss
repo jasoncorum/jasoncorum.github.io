@@ -2,15 +2,16 @@
 ---
 h1, h2, h3 {
   color: #fff;
+  margin-bottom: 0.25rem;
 }
 
-.fixed-top {
-    position: fixed;
-    top: 1rem;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    opacity: 0.75;
+.navbar-dark {
+  top: 1rem;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  opacity: 0.75;
+  border-radius: .25rem;
 }
 
 img {
@@ -54,19 +55,37 @@ body {
 }
 
 .card {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: rgba(255,255,255,0.2);
-    background-clip: border-box;
-    border-radius: .25rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(255,255,255,0.2);
+  background-clip: border-box;
+  border-radius: .25rem;
+  p {
+    color: #fff;
+  }
+  .btn {
+    background-color: rgb(52, 58, 64);
+    color: #91f9ce;
+    float: right;
+  }
+}
+
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #fff;
+}
+
+.card-body {
+  padding: 1rem;
 }
 
 .bg-light-wht {
