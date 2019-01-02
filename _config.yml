@@ -32,6 +32,8 @@ sass:
 collections:
   images:
     output: false
+  projects:
+    output: true
   portfolios:
     output: true
 

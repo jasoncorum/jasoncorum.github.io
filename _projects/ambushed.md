@@ -1,6 +1,7 @@
 ---
-title: LA River
+layout: project
+title: Ambushed
 credit: Set Decorator
-project: Ambushed
+portfolio: Film
 img_src: /assets/images/Ambushed-1.jpg
 ---
