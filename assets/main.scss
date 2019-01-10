@@ -1,5 +1,14 @@
 ---
 ---
+
+.container-fluid {
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 h1, h2, h3 {
   color: #fff;
   margin-bottom: 0.25rem;
@@ -52,6 +61,45 @@ body {
   -moz-background-size: 400px 200px;
   -o-background-size: 400px 200px;
   background-size: 400px 200px;
+}
+
+.carousel-row {
+  margin: 20px auto;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-clip: border-box;
+  border-radius: .25rem;
+  h1 {
+    color: #91f9ce;
+    font-size: 24px;
+    padding: 15px;
+  }
+  a {
+    color: #91f9ce;
+  }
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.carousel-control-prev {
+  margin-left: 15px;
+}
+
+.carousel-control-prev:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-clip: border-box;
+}
+
+.carousel-control-next {
+  margin-right: 15px;
+}
+
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-clip: border-box;
+  margin-right: 15px;
 }
 
 .card {

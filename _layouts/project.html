@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-<h1>{{page.title}}</h1>
-<div class="row">
-  <div id="carouselExampleFade" class="carousel slide carousel-fade col-md-8 col-md-offset-2" data-ride="carousel">
+<div class="row carousel-row">
+  <h1><a href="/">Home</a> > {% for portfolio in site.portfolios %}{% if portfolio.title == page.portfolio %}<a href="{{portfolio.url}}">{{portfolio.title}}</a>{% endif %}{% endfor %} > {{page.title}}</h1>
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade col-md-12" data-ride="carousel">
     <div class="carousel-inner">
       {% for image in site.images %}
         {% if image.project == page.title %}
@@ -28,3 +29,4 @@ layout: default
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>
