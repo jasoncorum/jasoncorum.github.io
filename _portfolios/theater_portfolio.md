@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Theater
-img_src: /assets/images/CourseworkSection-4.jpg
+title: Theater Portfolio
+img_src: /assets/images/Othello-3.jpg
 img_alt: Theater Portfolio
 ---

@@ -1,5 +1,26 @@
 ---
 ---
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab', serif;
+  color: #91f9ce;
+  a:hover {
+    color: #fff;
+  }
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  color: #91f9ce;
+}
+
+a {
+  color: #91f9ce;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
 
 .container-fluid {
   width: 100%;
@@ -7,11 +28,6 @@
   padding-left: 40px;
   margin-right: auto;
   margin-left: auto;
-}
-
-h1, h2, h3 {
-  color: #fff;
-  margin-bottom: 0.25rem;
 }
 
 .navbar-dark {
@@ -30,7 +46,7 @@ img {
 }
 
 .logo {
-  max-width: 275px;
+  max-width: 450px;
 }
 
 .nav-item {
@@ -63,23 +79,27 @@ body {
   background-size: 400px 200px;
 }
 
+.home-features {
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
+  img {
+    border-radius: .25rem;
+  }
+}
+
 .carousel-row {
   margin: 20px auto;
   padding: 25px;
   background-color: rgba(255, 255, 255, 0.2);
   background-clip: border-box;
   border-radius: .25rem;
+  opacity: 0.75;
   h1 {
-    color: #91f9ce;
-    font-size: 24px;
-    padding: 15px;
-  }
-  a {
-    color: #91f9ce;
-  }
-  a:hover {
-    color: #fff;
-    text-decoration: none;
+    margin: 0 auto;
+    font-size: 32px;
+    padding: 5px;
   }
 }
 
@@ -113,16 +133,10 @@ body {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: rgba(255,255,255,0.2);
   background-clip: border-box;
   border-radius: .25rem;
-  p {
-    color: #fff;
-  }
-  .btn {
-    background-color: rgb(52, 58, 64);
-    color: #91f9ce;
-    float: right;
+  h2 {
+    margin: 0 auto;
   }
 }
 
