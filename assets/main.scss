@@ -8,6 +8,10 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+img {
+  opacity: 1;
+}
+
 p {
   font-family: 'Vollkorn SC', serif;
   color: #91f9ce;
@@ -35,7 +39,6 @@ a:hover {
   right: 0;
   left: 0;
   z-index: 1030;
-  opacity: 0.65;
   border-radius: .25rem;
 }
 
@@ -92,10 +95,8 @@ body {
 .carousel-row {
   margin: 20px auto;
   padding: 25px;
-  background-color: rgba(255, 255, 255, 0.2);
   background-clip: border-box;
   border-radius: .25rem;
-  opacity: 0.65;
   h1 {
     margin: 0 auto;
     font-size: 32px;
@@ -136,7 +137,6 @@ body {
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: .25rem;
-  opacity: 0.65;
   h2 {
     margin: 0 auto;
   }
@@ -161,6 +161,6 @@ body {
   padding: 1rem;
 }
 
-.bg-light-wht {
-  background-color: none;
+.bg-dark {
+  background-color: rgba(52,58,64,0.65)!important;
 }
