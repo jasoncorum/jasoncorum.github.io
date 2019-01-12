@@ -13,7 +13,7 @@ layout: default
               <img class="d-block w-100 carousel-img" src="{{image.img_src}}" alt="{{image.title}}">
             </div>
           {% else %}
-            <div class="carousel-item carousel-img">
+            <div class="carousel-item carousel-img">w
               <img class="d-block w-100" src="{{image.img_src}}" alt="{{image.title}}">
             </div>
           {% endif %}
@@ -34,14 +34,13 @@ layout: default
   {% for project in site.projects %}
     {% if project.portfolio == page.title %}
       <div class="col-md-4">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img-top" src="{{project.img_src}}" alt="{{ project.img_alt }}">
-          <div class="card-body">
-            <a href="{{project.url}}" type="button" class="btn btn-sm btn-outline-secondary">View</a>
-            <h3>{{project.title}}</h3>
-            <p class="card-text">{{project.credit}}</p>
-          </div>
-        </div>
+          <a class="btn card bg-dark mb-4" href="{{project.url}}">
+            <img class="card-img-top" src="{{project.img_src}}" alt="{{ project.img_alt }}"/>
+            <div class="card-body">
+              <h3>{{project.title}}</h3>
+              <p class="card-text">{{project.credit}}</p>
+            </div>
+          </a>
       </div>
     {% endif %}
   {% endfor %}
