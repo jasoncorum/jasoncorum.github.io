@@ -8,10 +8,6 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-img {
-  opacity: 1;
-}
-
 p {
   font-family: 'Vollkorn SC', serif;
   color: #91f9ce;
@@ -45,7 +41,11 @@ a:hover {
 img {
   width: 100%;
   vertical-align: middle;
+  opacity: 1;
   border-style: none; // Remove the border on images inside links in IE 10-.
+  .footer-logo {
+    width: auto;
+  }
 }
 
 .logo {
@@ -92,6 +92,11 @@ body {
   }
 }
 
+.title-col {
+  text-align: center;
+  padding: 5px;
+}
+
 .carousel-row {
   margin: 20px auto;
   padding: 25px;
@@ -101,6 +106,9 @@ body {
     margin: 0 auto;
     font-size: 32px;
     padding: 5px;
+  }
+  p {
+    margin: 0 auto;
   }
 }
 
@@ -163,4 +171,14 @@ body {
 
 .bg-dark {
   background-color: rgba(52,58,64,0.65)!important;
+}
+
+.footer-logos {
+  display: flex;
+  padding: 5px 5px 5px 0;
+}
+
+.footer-logo {
+  flex: 10%;
+  padding: 3px;
 }
