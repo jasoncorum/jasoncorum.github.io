@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<div class="row carousel-row bg-dark justify-content-md-center">
-  <div class="col-md-auto title-col">
+<div class="row carousel-row bg-dark justify-content-center">
+  <div class="col-12 title-col">
    <h1>{{page.title}}</h1>
   </div>
 
-  <div id="carouselExampleFade" class="carousel slide carousel-fade col-md-12" data-ride="carousel">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade col-12" data-ride="carousel">
     <div class="carousel-inner">
       {% assign images = site.images | where:'featured', page.title %}
       {% for image in images %}
@@ -34,7 +34,7 @@ layout: default
 <div class="row">
   {% for project in site.projects %}
     {% if project.portfolio == page.title %}
-      <div class="col-md-4">
+      <div class="col-4">
           <a class="btn card bg-dark mb-4" href="{{project.url}}">
             <img class="card-img-top" src="{{project.img_src}}" alt="{{ project.img_alt }}"/>
             <div class="card-body">
