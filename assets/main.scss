@@ -54,12 +54,16 @@ img {
 }
 
 .logo {
-  max-width: 450px;
+  max-width: 550px;
 }
 
 .nav-item {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+}
+
+.navbar-nav {
+  margin-bottom: -30px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -119,9 +123,6 @@ body {
   h2 {
     text-align: center;
   }
-  img {
-    border-radius: .25rem;
-  }
 }
 
 .title-col {
@@ -130,10 +131,8 @@ body {
 }
 
 .carousel-row {
-  margin: 20px auto;
-  padding: 25px;
+  margin: 0;
   background-clip: border-box;
-  border-radius: .25rem;
   h1 {
     margin: 0 auto;
     font-size: 32px;

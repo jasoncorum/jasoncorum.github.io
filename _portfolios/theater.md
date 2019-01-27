@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Theater Portfolio
+title: Theater
 img_src: /assets/images/Lava8A.jpg
 img_alt: Lava
 ---
