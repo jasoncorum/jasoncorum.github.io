@@ -144,22 +144,49 @@ body {
 }
 
 .carousel-control-prev {
-  margin-left: 15px;
-}
-
-.carousel-control-prev:hover {
+  margin-left: 35px;
+  position: absolute;
+  top: 45%;
+  bottom: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 5%;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
   background-color: rgba(145, 249, 206, 0.6);
   background-clip: border-box;
+  border: 2px solid #fff;
 }
 
 .carousel-control-next {
-  margin-right: 15px;
-}
-
-.carousel-control-next:hover {
+  margin-right: 35px;
+  position: absolute;
+  top: 45%;
+  bottom: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 5%;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
   background-color: rgba(145, 249, 206, 0.6);
   background-clip: border-box;
-  margin-right: 15px;
+  border: 2px solid #fff;
 }
 
 .card {

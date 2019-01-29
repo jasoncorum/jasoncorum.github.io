@@ -8,11 +8,11 @@ layout: default
       {% for image in site.images %}
         {% if forloop.first == true %}
           <div class="carousel-item active">
-            <img class="d-block w-100 carousel-img" src="{{image.img_src}}" alt="{{image.title}}">
+            <a href="/pages/portfolios"><img class="d-block w-100 carousel-img" src="{{image.img_src}}" alt="{{image.title}}"></a>
           </div>
         {% else %}
           <div class="carousel-item carousel-img">
-            <img class="d-block w-100" src="{{image.img_src}}" alt="{{image.title}}">
+            <a href="/pages/portfolios"><img class="d-block w-100" src="{{image.img_src}}" alt="{{image.title}}"></a>
           </div>
         {% endif %}
       {% endfor %}
