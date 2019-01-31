@@ -2,4 +2,14 @@
 title: Contact
 layout: page
 ---
-<div id="googleblock" class="google-embed" style="height:705px !important;"><iframe src="https://docs.google.com/spreadsheet/embeddedform?bc=transparent&amp;f=%2522Lucida%2BGrande%2522%252C%2522Lucida%2BSans%2BUnicode%2522%252Csans-serif&amp;hl=en&amp;htc=%2523999999&amp;key=0AvUXUVkEJA5ZdE5JaEFmbTVNRjV6R3VlMExYYUZrMXc&amp;lc=%2523ffffff&amp;pli=1&amp;tc=%2523ffffff&amp;ttl=0" width="100%" height="705" title="Contact Information Form" allowtransparency="true" frameborder="0" marginheight="0" marginwidth="0" id="900465893"></iframe></div>
+<form action="https://getsimpleform.com/messages?form_api_token=b022c8e2a00e26b5a4362a140024bf37" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='/pages/thank-you' />
+  <!-- all your input fields here.... -->
+  <input type='email' name='Email' />
+  <input type='text' name='Name' />
+  <input type='text' name='Phone' />
+
+  <input type='submit' value='Submit' />
+</form>
+
