@@ -27,6 +27,15 @@ a:hover {
   text-decoration: none;
 }
 
+label {
+  font-family: 'Vollkorn SC', serif;
+  color: #91f9ce;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+}
+
 .container-fluid {
   width: 100%;
   padding-right: 40px;

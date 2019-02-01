@@ -2,14 +2,35 @@
 title: Contact
 layout: page
 ---
-<form action="https://getsimpleform.com/messages?form_api_token=b022c8e2a00e26b5a4362a140024bf37" method="post">
-  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='/pages/thank-you' />
-  <!-- all your input fields here.... -->
-  <input type='email' name='Email' />
-  <input type='text' name='Name' />
-  <input type='text' name='Phone' />
-
-  <input type='submit' value='Submit' />
-</form>
+<div class="col-md-6 offset-md-3 col-sm-12">
+  <form action="https://getsimpleform.com/messages?form_api_token=b022c8e2a00e26b5a4362a140024bf37" method="post">
+    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+    <input type='hidden' name='/pages/thank-you' />
+    <!-- all your input fields here.... -->
+    <div class="form-group">
+      <label>Name</label>
+      <input type='text' name='Name' />
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type='email' name='Email' />
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <input type='text' name='Phone' />
+    </div>
+    <h5>Preferred Method of Contact:</h5>
+    <div class="checkbox">
+      <label>Phone</label>
+      <input type="checkbox" name="contact" value="Phone">
+      <label>Email</label>
+      <input type="checkbox" name="contact" value="Email">
+    </div>
+    <div class="form-group">
+      <label>Message:</label>
+      <textarea class="form-control" name="Message" rows="8"></textarea>
+    </div>
+    <input type='submit' value='Submit' />
+  </form>
+</div>
 
