@@ -19,18 +19,11 @@ layout: page
       <label>Phone</label>
       <input type='text' name='Phone' />
     </div>
-    <h5>Preferred Method of Contact:</h5>
-    <div class="checkbox">
-      <label>Phone</label>
-      <input type="checkbox" name="contact" value="Phone">
-      <label>Email</label>
-      <input type="checkbox" name="contact" value="Email">
-    </div>
     <div class="form-group">
       <label>Message:</label>
       <textarea class="form-control" name="Message" rows="8"></textarea>
     </div>
-    <input type='submit' value='Submit' />
+    <input class="btn" type='submit' value='Submit' />
   </form>
 </div>
 

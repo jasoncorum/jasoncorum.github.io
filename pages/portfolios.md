@@ -2,7 +2,7 @@
 title: Portfolios
 layout: default
 ---
-<div class="row carousel-row">
+<div class="row">
   {% for portfolio in site.portfolios %}
       <div class="col">
         <a href="{{portfolio.url}}">

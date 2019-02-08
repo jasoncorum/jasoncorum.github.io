@@ -2,10 +2,6 @@
 layout: default
 ---
 <div class="row carousel-row justify-content-center">
-  <div class="col-12 title-col">
-   <h1>{{page.title}}</h1>
-  </div>
-
   <div id="carouselExampleFade" class="carousel slide carousel-fade col-12" data-ride="carousel">
     <div class="carousel-inner">
       {% assign images = site.images | where:'featured_portfolio', page.title %}
@@ -31,18 +27,21 @@ layout: default
     </a>
   </div>
 </div>
-<div class="row">
+<div class="row tiles-row">
   {% for project in site.projects %}
     {% if project.portfolio == page.title %}
       <div class="col-4">
-          <a class="btn card mb-4" href="{{project.url}}">
-            <img class="card-img-top" src="{{project.img_src}}" alt="{{ project.img_alt }}"/>
-            <div class="card-body">
-              <h3>{{project.title}}</h3>
-              <p class="card-text">{{project.credit}}</p>
+        <a href="{{project.url}}">
+          <div class="hovereffect">
+            <img class="img-responsive portfolio-img" src="{{project.img_src}}" alt="{{project.title}}">
+            <div class="overlay">
+              <p>{{project.title}}</p>
             </div>
-          </a>
+          </div>
+        </a>
       </div>
     {% endif %}
   {% endfor %}
 </div>
+
+
