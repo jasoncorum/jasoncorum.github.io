@@ -56,6 +56,10 @@ input[type="text"], input[type="email"] {
   left: 0;
   z-index: 1030;
   border-radius: .25rem;
+  h1 {
+    font-size: 16px;
+    float: right;
+  }
 }
 
 img {
@@ -63,9 +67,6 @@ img {
   vertical-align: middle;
   opacity: 1;
   border-style: none; // Remove the border on images inside links in IE 10-.
-  .footer-logo {
-    width: auto;
-  }
 }
 
 .logo {
@@ -220,14 +221,28 @@ body {
   }
 }
 
-.footer-logos {
-  display: flex;
-  padding: 5px 5px 5px 0;
+.footer {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+
+.copyright-col {
+  width: 50%;
+  display: table-cell;
+}
+
+.footer-text {
+  color: #91f9ce;
+  font-size: 10px;
+  float: none;
 }
 
 .footer-logo {
-  flex: 10%;
-  padding: 3px;
+  height: 34px;
+  width: auto;
+  float: right;
+  margin: 0 3px;
 }
 
 .portfolio {
