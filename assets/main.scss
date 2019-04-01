@@ -257,7 +257,6 @@ body {
   position: relative;
   text-align: center;
   cursor: default;
-  background: #55957A;
 }
 
 .hovereffect .overlay {
@@ -268,6 +267,10 @@ body {
   top: 0;
   left: 0;
   padding: 0 20px;
+}
+
+.hovereffect .overlay:hover {
+  background: rgba(85,149,122,0.6)
 }
 
 .hovereffect img {
@@ -284,7 +287,6 @@ body {
 }
 
 .hovereffect:hover img {
-  opacity: 0;
   filter: alpha(opacity=40);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -295,8 +297,17 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 0.5em 0;
+  padding: 0.5em 0 0 0;
   background-color: transparent;
+  margin-top: 10%;
+}
+
+.hovereffect h2 {
+  font-size: 42px;
+}
+
+.hovereffect p {
+  font-size: 24px;
 }
 
 .hovereffect h2:after, .hovereffect p:after {
