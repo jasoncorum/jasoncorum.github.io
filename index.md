@@ -5,7 +5,8 @@ layout: default
 <div class="row carousel-row">
   <div id="carouselExampleFade" class="carousel slide carousel-fade col-12" data-ride="carousel">
     <div class="carousel-inner">
-      {% for image in site.images %}
+      {% assign images = site.images | where:'featured_home', true %}
+      {% for image in images %}
         {% if forloop.first == true %}
           <div class="carousel-item active">
             <a href="/pages/portfolios"><img class="d-block w-100 carousel-img" src="{{image.img_src}}" alt="{{image.title}}"></a>

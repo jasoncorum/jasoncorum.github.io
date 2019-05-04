@@ -205,10 +205,9 @@ body {
 .carousel-caption {
   position: absolute;
   background-color: rgba(13, 23, 30, 0.7);
-  border: 2px solid #fff;
   color: #fff;
-  right: 2%;
-  bottom: 20px;
+  right: 0%;
+  bottom: 0%;
   left: 65%;
   z-index: 10;
   padding: 10px 0;
@@ -218,6 +217,16 @@ body {
     color: #fff;
     margin-bottom: 0;
     font-size: 18px;
+  }
+}
+
+.resume-download {
+  text-align: center;
+  padding: 0 0 2% 0;
+  font-size: 18px;
+  img {
+    width: 18px;
+    margin: 0 5px;
   }
 }
 
@@ -350,14 +359,20 @@ body {
   padding: 15px;
 }
 
+.thank-you {
+  p {
+    text-align: center;
+  }
+}
+
 @media (max-width: 545px) {
   p {
     font-size: 12px;
   }
 
   .carousel-caption {
-    right: 2%;
-    left: 2%;
+    right: 0%;
+    left: 0%;
     padding: 3px;
     h3 {
       font-size: 12px;
