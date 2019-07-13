@@ -4,7 +4,7 @@ layout: default
 <div class="row carousel-row justify-content-center">
   <div id="carouselExampleFade" class="carousel slide carousel-fade col-12" data-ride="carousel">
     <div class="carousel-inner">
-      {% assign images = site.images | where:'featured_portfolio', page.title %}
+      {% assign images = site.images | where:'featured_portfolio', page.title | sort: "portfolio_order" %}
       {% for image in images %}
         {% if forloop.first == true %}
           {% assign projects = site.projects | where:'title', image.project %}
@@ -40,7 +40,8 @@ layout: default
   </div>
 </div>
 <div class="row tiles-row">
-  {% for project in site.projects %}
+  {% assign projects = site.projects | sort: "portfolio_order" %}
+  {% for project in projects %}
     {% if project.portfolio == page.title %}
       <div class="col-md-4 col-6">
         <a href="{{project.url}}">

@@ -4,7 +4,7 @@ layout: default
 <div class="row carousel-row justify-content-md-center">
   <div id="carouselExampleFade" class="carousel slide carousel-fade col-12" data-ride="carousel">
     <div class="carousel-inner">
-      {% assign images = site.images | where:'project', page.title %}
+      {% assign images = site.images | where:'project', page.title | sort: "project_order" %}
       {% for image in images %}
         {% if forloop.first == true %}
           <div class="carousel-item active">
